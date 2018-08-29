@@ -1,0 +1,92 @@
+BEGIN MAINPROGRAM
+    numArray = []
+    continue = True
+    WHILE continue:
+         choice = Get input "Do you want to (l)oad numbers, (p)rint the array,
+         (s)um the array, (f)ind the max of the array, f(i)nd the min of the 
+         array or (q)uit
+         CASEWHERE choice is
+         l: loadArray (numArray)
+         p: printArray (numArray)
+         s: sumArray (numArray)
+         f: maxArray (numArray)
+         i: minArray (numArray)
+         q: continue = False
+       ENDCASE
+   END WHILE 
+END MAIN PROGRAM
+
+BEGIN loadArray (thisArray)
+     run Subroutine = true
+     WHILE runSubroutine:
+         inputNum = input ("Enter the number you wish to add or q to return to
+         the main program")
+         IF inputNum == q:
+             runSubroutine = False
+         ELSE:
+             append inputNum to thisArray
+         ENDIF
+     END WHILE
+
+
+END loadArray
+
+BEGIN printArray (thisArray)
+     run Subroutine = true
+     WHILE runSubroutine:
+         inputNum = input ("Enter 
+
+        IF inputNum == q:
+            runSubroutine = False
+        ELSE:
+            
+        ENDIF
+    END WHILE
+
+
+END printArray
+
+BEGIN sumArray (thisArray)
+     run Subroutine = true
+     WHILE runSubroutine:
+         inputNum = input ("Enter
+
+        IF inputNum == q
+             runSubroutine = False
+        ELSE:
+
+        ENDIF
+    END WHILE
+
+
+END sumArray
+
+BEGIN maxArray (thisArray)
+     run Subroutine = true
+     WHILE runSubroutine:
+         inputNum = input ("Enter
+
+        IF inputNum ==  q
+             runSubroutine = False
+        ELSE:
+
+        ENDIF
+    END WHILE
+
+
+END maxArray
+
+BEGIN minArray (thisArray)
+     runSubroutine = true
+     WHILE runSubroutine:
+        inputNum = input ("Enter
+
+        IF inputNum == q
+             runSubroutine = False
+        ELSE:
+
+        ENDIF
+    END WHILE
+
+
+END minArray (thisArray)
