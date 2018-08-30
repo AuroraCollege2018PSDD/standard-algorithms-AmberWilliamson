@@ -28,11 +28,13 @@ def loadArray(nootArray):
         numElements = len(nootArray)
         print('You have {} numbers in your array'.format(numElements))
         
-def maxArray(nootArray):
+def findMax(nootArray):
     print("The max of your array is" , max(boiArray))
+    print("findMax was called")
     
-def minArray(nootArray):
+def findMin(nootArray):
     print("The min of your array is", min(boiArray))
+    print("findMin was called")
     
 #credit to Caitlin for the try and except part
 boiArray = []
@@ -50,9 +52,9 @@ while start:
     elif user == 's':
         sumArray(boiArray)
     elif user == 'f':
-        maxArray(boiArray)
+        findMax(boiArray)
     elif user == 'i':
-        minArray(boiArray)
+        findMin(boiArray)
     elif user == 'q':
         start = False
 
