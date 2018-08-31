@@ -1,27 +1,30 @@
 NOT FINISHED
 
 BEGIN MAINPROGRAM
-    numArray = []
+    boiarray = []
     continue = True
     WHILE continue:
          choice = Get input "Do you want to (l)oad numbers, (p)rint the array,
          (s)um the array, (f)ind the max of the array, f(i)nd the min of the 
          array or (q)uit
          CASEWHERE choice is
-         l: loadArray (numArray)
-         p: printArray (numArray)
-         s: sumArray (numArray)
-         f: maxArray (numArray)
-         i: minArray (numArray)
+         l: loadArray (nootArray)
+         p: printArray (nootArray)
+         s: sumArray (nootArray)
+         f: maxArray (nootArray)
+         i: minArray (nootArray)
          q: continue = False
        ENDCASE
    END WHILE 
 END MAIN PROGRAM
 
+BEGIN SUBROUTINE
+
+
 BEGIN loadArray (thisArray)
      run Subroutine = true
      WHILE runSubroutine:
-         inputNum = input ("Enter the number you wish to add or q to return to
+         inputNum = Get input ("Enter the number you wish to add or q to return to
          the main program")
          IF inputNum == q:
              runSubroutine = False
@@ -35,12 +38,7 @@ END loadArray
 
 BEGIN printArray (thisArray)
      run Subroutine = true
-     WHILE runSubroutine:
-         inputNum = input ("Enter 
-
-        IF inputNum == q:
-            runSubroutine = False
-        ELSE:
+     print(inputNum) 
             
         ENDIF
     END WHILE
@@ -51,11 +49,11 @@ END printArray
 BEGIN sumArray (thisArray)
      run Subroutine = true
      WHILE runSubroutine:
-         inputNum = input ("Enter
+         sum = 0
+    for number in nootArray:
+        sum = sum + number
+    print('The sum of your array is', + sum)
 
-        IF inputNum == q
-             runSubroutine = False
-        ELSE:
 
         ENDIF
     END WHILE
@@ -63,32 +61,24 @@ BEGIN sumArray (thisArray)
 
 END sumArray
 
-BEGIN maxArray (thisArray)
+BEGIN findMax (thisArray)
      run Subroutine = true
      WHILE runSubroutine:
-         inputNum = input ("Enter
+        print("The max of your array is" , max(boiArray))
+        print("findMax was called")
+        
+        ENDIF
+    END WHILE
 
-        IF inputNum ==  q
-             runSubroutine = False
-        ELSE:
+
+END findMax
+
+BEGIN findMin (thisArray)
+      print("The min of your array is", min(boiArray))
+      print("findMin was called")
 
         ENDIF
     END WHILE
 
 
-END maxArray
-
-BEGIN minArray (thisArray)
-     runSubroutine = true
-     WHILE runSubroutine:
-        inputNum = input ("Enter
-
-        IF inputNum == q
-             runSubroutine = False
-        ELSE:
-
-        ENDIF
-    END WHILE
-
-
-END minArray (thisArray)
+END findMin
