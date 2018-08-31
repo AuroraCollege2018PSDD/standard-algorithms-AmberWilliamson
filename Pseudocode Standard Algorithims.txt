@@ -1,5 +1,3 @@
-NOT FINISHED
-
 BEGIN MAINPROGRAM
     boiarray = []
     continue = True
