@@ -34,31 +34,6 @@ def findMax(nootArray):
 def findMin(nootArray):
     print("The min of your array is", min(boiArray))
     print("findMin was called")
-
-def mainMenu(nootArray):
-    user = input("This is the main menu, do you want to (l)oad numbers, (p)rint the array, (s)um the array, (f)ind the max of the array, f(i)nd the min of the array or (q)uit ")
-    if user == 'l':
-        try:
-            numbs = int(input('Input a number that will be put into the array or press m to return to the main menu: '))
-        except ValueError:
-          print("Invalid entry, please enter a number or press m to return to the main menu")
-        else:
-            loadArray(boiArray)
-    elif user == 'p':
-        printArray(boiArray)
-    elif user == 's':
-        sumArray(boiArray)
-    elif user == 'f':
-        findMax(boiArray)
-    elif user == 'i':
-        findMin(boiArray)
-    elif user == "m":
-        mainMenu()
-    elif user == 'q':
-        start = False
-
-    
-    
 #credit to Caitlin for the try and except part
 #mainprogram
 boiArray = []
